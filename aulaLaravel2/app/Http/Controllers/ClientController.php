@@ -15,6 +15,7 @@ class ClientController extends Controller
     public function store(Request $request){
         Client::create($request->all());
         dd("Cadastrado!!");
+        
     }
 
     public function index(){

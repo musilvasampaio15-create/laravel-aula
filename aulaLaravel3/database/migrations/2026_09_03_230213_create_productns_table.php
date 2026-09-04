@@ -9,15 +9,17 @@ return new class extends Migration
 
     public function up(): void
     {
-        Schema::create('clients', function (Blueprint $table) {
+        Schema::create('productns', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->decimal('price', 8,2);
             $table->string('name');
+            $table->timestamps();
         });
     }
 
+
     public function down(): void
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('productns');
     }
 };
