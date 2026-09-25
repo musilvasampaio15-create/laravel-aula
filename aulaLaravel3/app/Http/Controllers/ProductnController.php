@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\productn;
 use Illuminate\Http\Request;
-
 class ProductnController extends Controller
 {
     public function create(){
